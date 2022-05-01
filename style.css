@@ -1,0 +1,163 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #c6e7c6;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+h1 {
+    color: rgb(30, 46, 100);
+    font-size: 2rem;
+}
+
+h2 {
+    color: rgb(102, 38, 38);
+    font-size: 1.7rem;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    color: #222;
+}
+
+p {
+    color: #333;
+    line-height: 1.5rem;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    transition: all 300ms ease-in-out;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-size: 120%;
+}
+
+
+/* Classes styles */
+.list__long-article {
+    display: none;
+}
+
+.contact-img {
+    text-align: center;
+    margin: auto;
+}
+
+.container__main-content {
+    max-width: 80vw;
+    padding: 2rem;
+    margin: auto;
+}
+
+.left-menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: white;
+    min-width: 200px;
+}
+
+.navbar {
+    background: whitesmoke;
+    padding: 1.2rem 0;
+}
+
+.nav {
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    position: relative;
+}
+
+.nav-item {
+    color: #333;
+}
+
+.nav-item a {
+    color: #333;
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    border-bottom: 1.2px solid red;
+}
+
+.subnav {
+    position: absolute;
+    visibility: hidden;
+    background: #bff3bf;
+    margin-top: 1.3rem;
+    min-width: 150px;
+}
+
+.subnav-item {
+    margin: .5rem .5rem .5rem -2rem;
+}
+
+.collapsable {
+    display: flex;
+    flex-direction: column;
+}
+
+.collapsable:hover .subnav {
+    visibility: visible;
+}
+
+.contact-img {
+    max-width: 50vw;
+}
+
+/* Generic classes, appliable for different types of elements */
+.list-none {
+    list-style: none;
+}
+
+/* Media queries */
+@media screen and (min-width: 512px) {
+    .list__long-article {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 972px) {
+    body {
+        grid-template-columns: 1fr;
+    }
+
+    .left-menu {
+        bottom: 0;
+        right: 0;
+        left: 0;
+        top: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .container__main-content {
+        margin-bottom: 150px;
+    }
+
+    .contact-img {
+        text-align: center;
+        margin: auto;
+    }
+}

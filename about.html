@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .about-img {
+            width: 100%;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        @media screen and (min-width: 768px) {
+            .about-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Left Navbar -->
+    <section class="container__left-menu">
+        <nav class="left-menu">
+          <section class="container__long-article">
+            <h3 class="title__long-article" style="margin-left: 0.5rem">
+              <a href="/"> A Long Article </a>
+            </h3>
+            <ul
+              class="list__long-article"
+              style="list-style: none; padding: 0; margin: 0; margin-left: 1.25rem"
+            >
+              <li>
+                <a href="/#intro">Intro</a>
+              </li>
+              <li>
+                <a href="/#facts">Facts</a>
+              </li>
+              <li>
+                <a href="/#conclusion">Conclusion</a>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h3 style="margin-left: 0.5rem">
+              <a href="about.html">About</a>
+            </h3>
+          </section>
+    
+          <section>
+            <h3 style="margin-left: 0.5rem">
+              <a href="contact.html">Contact Me</a>
+            </h3>
+          </section>
+        </nav>
+    </section>
+    
+    <section class="container__main-content">
+        <div class="about-grid">
+            <div>
+                <a href="https://jigth.xyz" target="_blank">
+                    <img class="about-img" src="img/about.jpeg" alt="about">
+                </a>
+            </div>
+            <div style="margin: 1rem 2rem;">
+                <h1>About me</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, quos labore. Fugiat quae rem reiciendis ex, itaque laborum fugit tempore </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia similique accusantium excepturi distinctio itaque tempore debitis eos quis aperiam sapiente deserunt quaerat dolor numquam earum, eum unde incidunt iure laudantium deleniti magnam doloribus. Minima maiores sequi enim quia porro non accusantium, optio distinctio laborum hic quam itaque qui delectus quidem?</p>
+
+                <h2>Why I love to create awesome things</h2>
+                <ul style="list-style: square; list-style: lower-greek;">
+                    <li style="margin-bottom: 1rem; margin-top: 1rem;">It is satisfying</li>
+                    <li style="margin-bottom: 1rem; margin-top: 1rem;">I can help people get their goals</li>
+                    <li style="margin-bottom: 1rem; margin-top: 1rem;">It helps me to practice a lot of topics about software development. Logic, Creativity, Web administration, Deployment, and lots of software paradigms while I'm doing something wortful. </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
