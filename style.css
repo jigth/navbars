@@ -74,50 +74,11 @@ a:hover {
     min-width: 200px;
 }
 
-.navbar {
-    background: whitesmoke;
-    padding: 1.2rem 0;
-}
-
 .nav {
     display: flex;
     width: fit-content;
     margin: auto;
     position: relative;
-}
-
-.nav-item {
-    color: #333;
-}
-
-.nav-item a {
-    color: #333;
-    text-decoration: none;
-}
-
-.nav-item a:hover {
-    border-bottom: 1.2px solid red;
-}
-
-.subnav {
-    position: absolute;
-    visibility: hidden;
-    background: #bff3bf;
-    margin-top: 1.3rem;
-    min-width: 150px;
-}
-
-.subnav-item {
-    margin: .5rem .5rem .5rem -2rem;
-}
-
-.collapsable {
-    display: flex;
-    flex-direction: column;
-}
-
-.collapsable:hover .subnav {
-    visibility: visible;
 }
 
 .contact-img {
